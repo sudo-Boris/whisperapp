@@ -6,6 +6,7 @@ import sounddevice as sd
 # pip install git+https://github.com/openai/whisper.git
 import whisper
 
+# Select from the following models: "tiny", "base", "small", "medium", "large"
 model = whisper.load_model("small")
 
 # create the app
@@ -37,7 +38,8 @@ def voice_rec():
 def transcribe():
     audio = "my_Audio_file.flac"
 
-    options = {"fp16": False, "language": "Bulgarian", "task": "transcribe"}
+    # You can provide the language to the model if it is a bit to "exotic" to predict
+    options = {"fp16": False, "language": None, "task": "transcribe"}
     results = model.transcribe(audio, **options)
 
     print(results["text"])
@@ -47,7 +49,8 @@ def transcribe():
 def translate():
     audio = "my_Audio_file.flac"
 
-    options = {"fp16": False, "language": "Bulgarian", "task": "translate"}
+    # You can provide the language to the model if it is a bit to "exotic" to predict
+    options = {"fp16": False, "language": None, "task": "translate"}
     results = model.transcribe(audio, **options)
 
     print(results["text"])
