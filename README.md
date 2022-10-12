@@ -9,4 +9,4 @@ The model was trained on 680,000 hours of multilingual and multitask supervised 
 
 Feel free to use this code and extend it to make the app prettier or maybe even implement new features!
 
-> I also have a video on [YouTube video](https://youtu.be/nIEsBcR17oE) where I go talk more about the model and code and also play around by trying different languages!
+> I also have a [YouTube video](https://youtu.be/nIEsBcR17oE) where I go talk more about the model and code and also play around by trying different languages!
